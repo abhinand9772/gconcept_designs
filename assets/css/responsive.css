@@ -35,7 +35,7 @@
   }
 
   .navbar-header {
-    height: 60px;
+    height: 100px;
   }
 
   .logo-container {
@@ -162,14 +162,14 @@
     padding: 15px 0 15px 45px;
   }
 
-  .navbar .navbar-nav .dropdown > a:after,
+  /* .navbar .navbar-nav .dropdown > a:after,
   .dropdown-submenu > a:after{
     font-family: "FontAwesome";
     position: absolute;
     content: "\f107";
     right: 15px;
     color: #121212;
-  }
+  } */
 
   .navbar-nav .open .dropdown-menu > li > a {
     color: #7a7a7a;
