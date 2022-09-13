@@ -42,6 +42,10 @@
     position: absolute;
     top: 0;
   }
+  .logo1-container {
+    position: relative;
+    top: 0;
+  }
 
   .logo-wrap {
     width: auto;

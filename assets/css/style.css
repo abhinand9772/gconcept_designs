@@ -412,6 +412,11 @@ p {
   padding-right: 15px;
   float: left;
 }
+.logo1-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
 
 .logo-wrap {
   display: table;

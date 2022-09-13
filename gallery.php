@@ -499,7 +499,7 @@ $res = mysqli_query($conn, $sql);
           <div class="row">
             <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="widget footer-about-us">
-                <div class="logo-container">
+                <div class="logo1-container">
                   <div class="logo-wrap">
                     <a href="index.html">
                       <img style="height: 200px" class="logo" src="assets/img/G-CONCEPTS LOGO blur-01.png" alt="logo" />
