@@ -7396,7 +7396,7 @@ label {
   }
 }
 
-.vk-page.portfolio .vk-filter-box {
+/* .vk-page.portfolio .vk-filter-box {
   text-align: left;
   border-bottom: 2px solid #f0f0f0;
   vertical-align: top;
@@ -7416,3 +7416,51 @@ label {
   text-align: center;
   margin-top: 40px;
 }
+
+
+.vk-pagination {
+  font-size: 18px;
+  margin: 0;
+}
+
+.vk-pagination>li>a,
+.vk-pagination>li span {
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: #999999;
+}
+
+.vk-pagination>li>a:hover,
+.vk-pagination>li>a:focus,
+.vk-pagination>li span:hover,
+.vk-pagination>li span:focus {
+  color: #ffc000;
+  background-color: transparent;
+}
+
+.vk-pagination>.active>a,
+.vk-pagination>.active span {
+  color: #ffc000;
+  background-color: transparent;
+}
+
+.vk-pagination>.active>a:hover,
+.vk-pagination>.active>a:focus,
+.vk-pagination>.active span:hover,
+.vk-pagination>.active span:focus {
+  background-color: transparent;
+  color: #ffc000;
+}
+
+.vk-pagination>.disabled>span,
+.vk-pagination>.disabled a {
+  color: #e6e6e6;
+}
+
+.vk-pagination>.disabled>span:hover,
+.vk-pagination>.disabled>span:focus,
+.vk-pagination>.disabled a:hover,
+.vk-pagination>.disabled a:focus {
+  color: #e6e6e6;
+} */

@@ -444,29 +444,7 @@ $res = mysqli_query($conn, $sql);
           <!-- end work-item -->
 
 
-          <div class="box-pagination">
-            <nav aria-label="pagination">
-              <ul class="pagination vk-pagination">
-                <?php
-                for ($i = 1; $i <= $pagi; $i++) {
-                  $class = '';
-                  if ($current_page == $i) {
-                ?>
-                    <li class="active"> <a href="javascript:void(0)"><?php echo $i ?> <span class="sr-only">(current)</span></a></li>
-                  <?php
-                  } else {
-                  ?>
-                    <li><a href="?start=<?php echo $i ?>"><?php echo $i ?><span class="sr-only">(current)</span></a></li>
-                  <?php
-                  }
-                  ?>
 
-                <?php } ?>
-
-
-              </ul>
-            </nav>
-          </div>
 
 
 
@@ -474,12 +452,42 @@ $res = mysqli_query($conn, $sql);
 
         </div> <!-- end portfolio container -->
 
-        <div class="row mt-40">
-          <div class="col-md-12 text-center">
-            <a href="portfolio-4-col-masonry.html" class="btn btn-lg btn-dark" id="load-more">More Works</a>
+
+
+        <div class="vk-page portfolio">
+          <div class="container">
+            <div class="box-pagination">
+              <nav aria-label="pagination">
+                <ul class="pagination ">
+                  <?php
+                  for ($i = 1; $i <= $pagi; $i++) {
+                    $class = '';
+                    if ($current_page == $i) {
+                  ?>
+                      <li class="active"> <a href="javascript:void(0)"><?php echo $i ?> <span class="sr-only">(current)</span></a></li>
+                    <?php
+                    } else {
+                    ?>
+                      <li><a href="?start=<?php echo $i ?>"><?php echo $i ?><span class="sr-only">(current)</span></a></li>
+                    <?php
+                    }
+                    ?>
+
+                  <?php } ?>
+
+
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
+
       </div>
+
+
+
+
+
     </section>
     <!-- Gallery end -->
 
