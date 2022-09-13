@@ -7411,3 +7411,8 @@ label {
     margin-top: 65px;
   }
 }
+
+.vk-page.portfolio .box-pagination {
+  text-align: center;
+  margin-top: 40px;
+}
