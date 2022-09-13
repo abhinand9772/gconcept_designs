@@ -39,7 +39,7 @@
   }
 
   .logo-container {
-    position: relative;
+    position: absolute;
     top: 0;
   }
 
