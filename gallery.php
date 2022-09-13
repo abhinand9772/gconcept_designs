@@ -444,21 +444,29 @@ $res = mysqli_query($conn, $sql);
           <!-- end work-item -->
 
 
-          <?php
-          for ($i = 1; $i <= $pagi; $i++) {
-            $class = '';
-            if ($current_page == $i) {
-          ?>
-              <li class="active"> <a href="javascript:void(0)"><?php echo $i ?> <span class="sr-only">(current)</span></a></li>
-            <?php
-            } else {
-            ?>
-              <li><a href="?start=<?php echo $i ?>"><?php echo $i ?><span class="sr-only">(current)</span></a></li>
-            <?php
-            }
-            ?>
+          <div class="box-pagination">
+            <nav aria-label="pagination">
+              <ul class="pagination vk-pagination">
+                <?php
+                for ($i = 1; $i <= $pagi; $i++) {
+                  $class = '';
+                  if ($current_page == $i) {
+                ?>
+                    <li class="active"> <a href="javascript:void(0)"><?php echo $i ?> <span class="sr-only">(current)</span></a></li>
+                  <?php
+                  } else {
+                  ?>
+                    <li><a href="?start=<?php echo $i ?>"><?php echo $i ?><span class="sr-only">(current)</span></a></li>
+                  <?php
+                  }
+                  ?>
 
-          <?php } ?>
+                <?php } ?>
+
+
+              </ul>
+            </nav>
+          </div>
 
 
 

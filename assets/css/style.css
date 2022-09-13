@@ -7395,3 +7395,19 @@ label {
     display: none;
   }
 }
+
+.vk-page.portfolio .vk-filter-box {
+  text-align: left;
+  border-bottom: 2px solid #f0f0f0;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 65px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .vk-page.portfolio .box-pagination {
+    margin-top: 65px;
+  }
+}
