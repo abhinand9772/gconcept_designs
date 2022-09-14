@@ -454,11 +454,11 @@ $res = mysqli_query($conn, $sql);
 
 
 
-        <div class="vk-page portfolio">
-          <div class="container">
+        
+          <div style="justify-content:center; margin-top: 70px;" class="division">
             <div class="box-pagination">
               <nav aria-label="pagination">
-                <ul class="pagination ">
+                <ul style="border-bottom: 0px solid;" class="pagination">
                   <?php
                   for ($i = 1; $i <= $pagi; $i++) {
                     $class = '';
@@ -482,7 +482,7 @@ $res = mysqli_query($conn, $sql);
           </div>
         </div>
 
-      </div>
+      
 
 
 
