@@ -29,7 +29,8 @@ $res = mysqli_query($conn, $sql);
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta charset="UTF-8" />
 
   <!-- Primary Meta Tags -->
@@ -67,7 +68,9 @@ $res = mysqli_query($conn, $sql);
   <link rel="author" href="https://plus.google.com/u/0/104296509460513856975" />
 
   <!-- Google Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700,600,800,400,300%7CMontserrat:400,700%7CRaleway:600,400' rel='stylesheet'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700,600,800,400,300%7CMontserrat:400,700%7CRaleway:600,400'
+    rel='stylesheet'>
 
   <!-- Css -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -124,8 +127,10 @@ $res = mysqli_query($conn, $sql);
             <div class="logo-container">
               <div class="logo-wrap">
                 <a href="index.html">
-                  <img style="height: 120px;" class="logo" src="assets/img/G-CONCEPTS LOGO blur-01.png" alt="logo">
-                  <img style="height: 120px;" class="logo-dark" src="assets/img/G-CONCEPTS LOGO blur-01.png" alt="logo">
+                  <img style="height: 110px;padding-top: 5px;padding-bottom: 5px;" class="logo"
+                    src="assets/img/G-CONCEPTS LOGO blur-01.1.png" alt="logo">
+                  <img style="height: 110px;padding-top: 5px;" class="logo-dark"
+                    src="assets/img/G-CONCEPTS LOGO blur-01.1.png" alt="logo">
                 </a>
               </div>
             </div>
@@ -427,19 +432,19 @@ $res = mysqli_query($conn, $sql);
           if (mysqli_num_rows($res) > 0) {
             while ($row = mysqli_fetch_assoc($res)) { ?>
 
-              <div class="work-item masonry-item web-design photography">
-                <div class="work-container">
-                  <div class="work-img">
-                    <img src="gallery\<?php echo $row['file_name'] ?>" alt="">
-                    <div class="work-overlay">
+          <div class="work-item masonry-item web-design photography">
+            <div class="work-container">
+              <div class="work-img">
+                <img src="gallery\<?php echo $row['file_name'] ?>" alt="">
+                <div class="work-overlay">
 
-                    </div>
-                  </div>
                 </div>
               </div>
-            <?php }
+            </div>
+          </div>
+          <?php }
           } else { ?>
-            No records
+          No records
           <?php } ?>
           <!-- end work-item -->
 
@@ -454,35 +459,36 @@ $res = mysqli_query($conn, $sql);
 
 
 
-        
-          <div style="justify-content:center; margin-top: 70px;" class="division">
-            <div class="box-pagination">
-              <nav aria-label="pagination">
-                <ul style="border-bottom: 0px solid;" class="pagination">
-                  <?php
-                  for ($i = 1; $i <= $pagi; $i++) {
-                    $class = '';
-                    if ($current_page == $i) {
+
+        <div style="justify-content:center; margin-top: 70px;" class="division">
+          <div class="box-pagination">
+            <nav aria-label="pagination">
+              <ul style="border-bottom: 0px solid;" class="pagination">
+                <?php
+                for ($i = 1; $i <= $pagi; $i++) {
+                  $class = '';
+                  if ($current_page == $i) {
+                ?>
+                <li class="active"> <a href="javascript:void(0)"><?php echo $i ?> <span
+                      class="sr-only">(current)</span></a></li>
+                <?php
+                  } else {
                   ?>
-                      <li class="active"> <a href="javascript:void(0)"><?php echo $i ?> <span class="sr-only">(current)</span></a></li>
-                    <?php
-                    } else {
-                    ?>
-                      <li><a href="?start=<?php echo $i ?>"><?php echo $i ?><span class="sr-only">(current)</span></a></li>
-                    <?php
-                    }
-                    ?>
+                <li><a href="?start=<?php echo $i ?>"><?php echo $i ?><span class="sr-only">(current)</span></a></li>
+                <?php
+                  }
+                  ?>
 
-                  <?php } ?>
+                <?php } ?>
 
 
-                </ul>
-              </nav>
-            </div>
+              </ul>
+            </nav>
           </div>
         </div>
+      </div>
 
-      
+
 
 
 
@@ -535,22 +541,32 @@ $res = mysqli_query($conn, $sql);
                         </div>
                       </article>
                     </li>
-                    <li class="footer-entry small-space">
-                      <article class="post-small clearfix">
-                        <div class="entry">
-                          <p>
-                            Email:
-                            <a href="mailto:careers@thegconcepts.com">careers@thegconcepts.com</a>
-                          </p>
-                        </div>
-                      </article>
-                    </li>
+
                     <li class="footer-entry small-space">
                       <article class="post-small clearfix">
                         <div class="entry">
                           <p>
                             Email:
                             <a href="mailto:info@thegconcepts.com">info@thegconcepts.com</a>
+                          </p>
+                        </div>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <br>
+
+              <div class="widget footer-posts">
+                <h5>Join Our Team</h5>
+                <div class="footer-entry-list">
+                  <ul class="posts-list no-top-pad">
+                    <li class="footer-entry small-space" style="padding-top: 0px;">
+                      <article class="post-small clearfix">
+                        <div class="entry">
+                          <p>
+                            Email:
+                            <a href="mailto:careers@thegconcepts.com">careers@thegconcepts.com</a>
                           </p>
                         </div>
                       </article>
@@ -586,8 +602,8 @@ $res = mysqli_query($conn, $sql);
               <span>
                 &copy;
                 <script>
-                  document.querySelector(".copyright span").innerHTML +=
-                    new Date().getFullYear();
+                document.querySelector(".copyright span").innerHTML +=
+                  new Date().getFullYear();
                 </script>
                 G-CONCEPTS | Made by <a href="https://thedaxads.com/">DaxAds</a>
               </span>
@@ -627,7 +643,8 @@ $res = mysqli_query($conn, $sql);
   <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
   <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
   <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+  <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js">
+  </script>
   <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
   <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
   <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
