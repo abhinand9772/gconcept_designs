@@ -481,7 +481,17 @@
 							</div>
 
 							<textarea name="comment" id="comment" placeholder="Message" rows="9"></textarea>
-							<input type="submit" class="btn btn-lg btn-color btn-submit" value="Send Message" id="submit-message">
+							<!-- <input type="submit" class="btn btn-lg btn-color btn-submit" value="Send Message" id="submit-message"> -->
+							<button
+                    class="btn btn-lg btn-color btn-submit"
+                    type="submit"
+                    id="send"
+                    onclick="contact()"
+                    name="submit-form"
+                    onclick="contact()"
+                  >
+                    send message
+                  </button>
 							<div id="msg" class="message"></div>
 						</form>
 					</div> <!-- end col -->
@@ -694,6 +704,27 @@
 
 		});
 	</script> 
+
+
+
+<!-- contactform -->
+    <script>
+    
+        function contact() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("mail").value;
+            let message = document.getElementById("comment").value;
+
+            let contact = `${name}, ${email}, ${message}`;
+
+            // alert(contact);
+
+            let url = `https://wa.me/918943990555?text=${contact}`;
+            window.open(url);
+
+
+        }
+</script>
 		
 </body>
 
